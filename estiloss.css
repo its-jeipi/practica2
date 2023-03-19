@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(140, 0, 255);
+    font-family:'Times New Roman', Times, serif;
+}
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+
+}
+h3{
+    text-align: center;
+    color: rgb(27, 0, 180);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+td{
+    color: rgb(255, 255, 255);
+}
+
+fieldset{
+    background-color: rgb(144, 94, 238);
+    margin-top: 30px;
+}
+legend{
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.btn-1{
+    margin-left: 100px;
+}
+
+th, td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    padding-right: 150px;
+  }
+.city{
+    padding-left: 143px;
+}
+h4{
+    text-align: center;
+}
+.tele{
+    text-align: left;
+    margin-left: 300px;
+}
+.inters{
+    text-align: right;
+    margin-right: 300px;
+}
+
+.checkbox-round:checked {
+    background-color: rgb(38, 0, 255);
+}
