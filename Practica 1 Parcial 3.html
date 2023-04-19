@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Operaciones matematicas</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="Width=device=width">
+    </head>
+    <script>
+        function suma(){
+        var num1=prompt("Escribe un numero:","")
+        var num2=prompt("Escribe un segundo numero:","")
+        num3=parseInt (num1)+ parseInt (num2);
+        alert("El resultado es: "+num3)
+        }
+        function resta(){
+        var num1=prompt("Escribe un numero:","")
+        var num2=prompt("Escribe un segundo numero:","")
+        num3=parseInt (num1)- parseInt (num2);
+        alert("El resultado es: "+num3)
+        }
+        function multiplicar(){
+        var num1=prompt("Escribe un numero:","")
+        var num2=prompt("Escribe un segundo numero:","")
+        num3=parseInt (num1)* parseInt (num2);
+        alert("El resultado es: "+num3)
+        }
+        function dividir(){
+        var num1=prompt("Escribe un numero:","")
+        var num2=prompt("Escribe un segundo numero:","")
+        num3=parseInt (num1)/ parseInt (num2);
+        alert("El resultado es: "+num3)
+        }
+        function k(){
+            var num=prompt("Escribe un numero:","")
+            if(parseInt(num)>=0)
+                alert("Es positivo")
+            else
+                alert("Es negativo")
+        }
+    </script>
+    <style>
+        .Button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border: none;
+            width: 200px;
+            height: 50px;
+            margin: 50px;
+            background-color: blue;
+        }
+    </style>
+    <body>
+        <div>
+        <input class="Button" type="button" name="suma" value="suma" onclick="suma()"/>
+        <input class="Button"type="button" name="resta" value="resta" onclick="resta()"/>
+        <input class="Button"type="button" name="multiplicar" value="multiplicar" onclick="multiplicar()"/>
+        <input class="Button"type="button" name="dividir" value="dividir" onclick="dividir()"/>
+        <input class="Button"type="button" name="¿Positivio o negativo?" value="¿Positivio o negativo?" onclick="k()"/>
+        </div>
+    </body>
+    </head>
+</html>
