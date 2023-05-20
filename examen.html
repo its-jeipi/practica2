@@ -7,15 +7,18 @@
 
     <script>
 
-    function fecha(){
-    var fecha = document.getElementsByClassName("fechita").valueAsDate;
-    var revisar;
-    //document.getElementById("fechita").innerHTML;
-    if(mes=fecha)
-        document.getElementById("fechita").innerHTML="Excelente obtiviste un descuento extra";
+    function verificarCumple() {
+    var nombre = document.getElementById("nombre").value;
+    var fechaNacimiento = new Date(document.getElementById("cumple").value);
+    var mesActual = new Date().getMonth() + 1;
+
+    if (fechaNacimiento.getMonth() + 1 === mesActual) {
+      var resultadoDiv = document.getElementById("resultado");
+      resultadoDiv.innerHTML = '<img src="descuento.jpg" alt="Felicidades">' + '<p>¡Felicidades, ' + nombre + '!Ganas 2X1.</p>';
+    } else {
+      document.getElementById("resultado").innerHTML = "";
     }
-
-
+  }
     </script>
 
     <style>
@@ -98,29 +101,14 @@
     </style>
 
     <body>
-        <p id="mes">
-        <div class="contenedor">
-            <div class="cuadro">
-                <div class="titulo"><p class="titulo1">Obtén un Descuento Extra!</p></div>
-                <div class="nom">
-                    Nombre:
-                    <div class="inputi">
-                        <input type="text" placeholder="Nombre de Usuario" value="">
-                    </div>
-                </div>
-                <div class="date">
-                    Fecha de Nacimiento:
-                    <div class="fecha">
-                        <input class="fechita" type="date" value="">
-                    </div>
-                </div>
-                <div class="resul">
-                    <button type="button" onclick="fecha()">Enviar Formulario</button>
-                </div>
+        <h1>Puedes obtener un producto gratis</h1>
+        <label class="name">Nombre </label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" value="">
+        <label class="dia">Dia de Nacimiento</label>
+        <input type="date" id="cumple" name="cumple" value="">
+        <button onclick="verificarCumple()" class="boton">Verificar</button>
 
-            </div>
-
-        </div>
+        <div id="resultado" ></div>
 
     </body>    
 
